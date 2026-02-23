@@ -25,20 +25,22 @@ export const crops = [
     'cactus',
     'sugar_cane',
     'nether_wart',
-    'mushroom'
+    'mushroom',
+    'sunflower'
 ];
 
 export const cropEmojis = {
-    wheat: '<:wheat:1118399336062136350>',
-    carrot: '<:carrot:1118399184630993047>',
-    potato: '<:potato:1118399268328325220>',
-    pumpkin: '<:pumpkin:1118399286183473162>',
-    melon: '<:melon:1118399216490913902>',
-    cocoa: '<:cocoa:1118399201185890335>',
-    cactus: '<:cactus:1118399167539204147>',
-    sugar_cane: '<:sugar_cane:1118399321814089770>',
-    nether_wart: '<:nether_wart:1118399246786375780>',
-    mushroom: '<:mushroom:1118399231506518036>'
+    wheat: '🌾',
+    carrot: '🥕',
+    potato: '🥔',
+    pumpkin: '🎃',
+    melon: '🍈',
+    cocoa: '🍫',
+    cactus: '🌵',
+    sugar_cane: '🎋',
+    nether_wart: '🧪',
+    mushroom: '🍄',
+    sunflower: '🌻'
 };
 
 export const populateCrops = (settings: FarmingContestSettings) => {

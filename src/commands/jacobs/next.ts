@@ -14,24 +14,31 @@ const COULDNT_FETCH_DATA = new EmbedBuilder()
 export default new Subcommand('next')
     .setDescription('Shows the next 3 farming contests.')
     .setExecutor(async (_, interaction) => {
+        await interaction.deferReply();
+
         const strassburgerData = await getFarmingContestData().catch(
             async () => {
-                await interaction.reply({
+                await interaction.editReply({
                     embeds: [
                         COULDNT_FETCH_DATA.setFooter({
                             text: getRandomFooter()
                         })
                     ]
                 });
-                return;
+                return null;
             }
         );
-        const nextContest = strassburgerData?.find(
+
+        if (!strassburgerData) {
+            return;
+        }
+
+        const nextContest = strassburgerData.find(
             (contest) => contest.time > new Date()
         );
 
-        if (!strassburgerData || !nextContest) {
-            await interaction.reply({
+        if (!nextContest) {
+            await interaction.editReply({
                 content:
                     'Could not find any upcoming farming contests, did a new season start?'
             });
@@ -68,7 +75,7 @@ export default new Subcommand('next')
             });
         }
 
-        await interaction.reply({
+        await interaction.editReply({
             embeds: [FARMING_CONTEST_EMBED]
         });
     });

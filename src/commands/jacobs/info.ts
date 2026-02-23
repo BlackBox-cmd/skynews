@@ -11,7 +11,8 @@ const INFO_EMBED = new EmbedBuilder()
 export default new Subcommand('info')
     .setDescription('Shows information about the Farming Contest API.')
     .setExecutor(async (_, interaction) => {
-        await interaction.reply({
+        await interaction.deferReply();
+        await interaction.editReply({
             embeds: [INFO_EMBED]
         });
     });

@@ -23,6 +23,7 @@ export default new Subcommand('subscribe')
                 { name: 'Sugar Cane', value: 'sugar_cane' },
                 { name: 'Nether Wart', value: 'nether_wart' },
                 { name: 'Mushroom', value: 'mushroom' },
+                { name: 'Sunflower', value: 'sunflower' },
                 { name: 'All', value: 'all' }
             )
     )

@@ -21,6 +21,6 @@ await client.addEventsFolder(eventsFolder);
 
 const commandsFolder = new URL('commands/', import.meta.url);
 await client.addCommandsFolder(commandsFolder);
-await client.registerCommands(undefined, '1116970598019629086');
+await client.registerCommands(undefined, '1192495856998432830');
 
 await client.login();
