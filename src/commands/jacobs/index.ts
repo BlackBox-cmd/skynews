@@ -26,7 +26,9 @@ export const crops = [
     'sugar_cane',
     'nether_wart',
     'mushroom',
-    'sunflower'
+    'sunflower',
+    'moonflower',
+    'wild_rose'
 ];
 
 export const cropEmojis = {
@@ -40,7 +42,9 @@ export const cropEmojis = {
     sugar_cane: '🎋',
     nether_wart: '🧪',
     mushroom: '🍄',
-    sunflower: '🌻'
+    sunflower: '🌻',
+    moonflower: '🌸',
+    wild_rose: '🌹'
 };
 
 export const populateCrops = (settings: FarmingContestSettings) => {

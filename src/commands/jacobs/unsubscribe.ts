@@ -24,6 +24,8 @@ export default new Subcommand('unsubscribe')
                 { name: 'Nether Wart', value: 'nether_wart' },
                 { name: 'Mushroom', value: 'mushroom' },
                 { name: 'Sunflower', value: 'sunflower' },
+                { name: 'Moonflower', value: 'moonflower' },
+                { name: 'Wild Rose', value: 'wild_rose' },
                 { name: 'All', value: 'all' }
             )
     )
